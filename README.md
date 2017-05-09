@@ -2,7 +2,7 @@
 This was my project for my SEIS 744 IoT class semester project. It takes a webcam connected to a raspberry pi and sends images to the server while comparing the new image to the old one to see if there is a percent difference between the two. If there is it will call and endpoint in the server side code to send an email.
 
 # Build
-First you will need tp put the .PY file on your raspberry pi. You can then run it from there manually or setup the script to run on boot.
+First you will need tp put the capstone.py file on your raspberry pi. You can then run it from there manually or setup the script to run on boot. You will need to update the URLs that the py script is calling so that it hits the code on your server.
 You will need to load the .sln file in visual studio. Once you do that you will get a compiler error. If you follow the error it will take you to where you need to input you gmail email and password so that notifications can be sent.
 
 # Hardware
