@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using System.Web;
 using System.Web.Mvc;
 using System.Net.Mail;
@@ -25,6 +25,12 @@ namespace SmartCam.Controllers
         public FileResult GetPicture()
         {
             return new FileStreamResult(new MemoryStream(currentImage), "image/jpeg");
+        }
+
+        [HttpGet]
+        public ActionResult ShowFeed()
+        {
+            return View();
         }
 
         [HttpGet]
